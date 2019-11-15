@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TableModule } from 'primeng/table';
+import { CheckboxModule } from 'primeng/checkbox';
 
 import { TaskRoutingModule } from './task-routing.module';
 import { TaskListComponent } from './components/task-list/task-list.component';
@@ -16,6 +17,7 @@ import { PrimeTaskListComponent } from './components/prime-task-list/prime-task-
     FormsModule,
     TaskRoutingModule,
     TableModule,
+    CheckboxModule
   ]
 })
 export class TaskModule { }

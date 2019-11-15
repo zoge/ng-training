@@ -24,7 +24,12 @@ export class PrimeTaskListComponent implements OnInit {
     this.cols = [
       { field: 'name', header: 'Name' },
       { field: 'is_done', header: 'Done' },
-  ];
+    ];
   }
-
+  onRowEditSave(task: TaskDto) {
+    console.log('Row edit saved', task);
+  }
+  dataTableOnChange($event, col, rowData, rowIndex, dt ) {
+    console.log('onChange', $event, col, rowData, dt);
+  }
 }
